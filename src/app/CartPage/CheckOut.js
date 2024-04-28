@@ -154,9 +154,7 @@ export default function CheckOut({ HandlePlaceOrder, orderfinal, DataCart, total
                   <label class="font-medium inline-block mb-3 text-sm uppercase">
                     Shipping
                   </label>
-                  <select class="block p-2 text-gray-600 w-full text-sm">
-                    <option>Standard shipping {String(process.env.SHIPPING)}</option>
-                  </select>
+                
                 </div>
                 <div class="border-t mt-8">
                   <div class="flex font-semibold justify-between py-6 text-sm uppercase">
