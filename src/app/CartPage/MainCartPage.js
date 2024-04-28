@@ -169,7 +169,7 @@ export default function MainCartPage() {
               HandlePlaceOrder={HandlePlaceOrder}
               orderfinal={orderfinal}
               DataCart={DataCart}
-              total={total}
+              total={Number((Number(total)+50))}
             />
           </div>
         </div>
