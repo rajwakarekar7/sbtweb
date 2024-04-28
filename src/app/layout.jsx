@@ -44,7 +44,7 @@ const RootLayout = ({ children }) => {
         <Head>
           {/* Title */}
           <title>
-            SoilBooster.in | Soil Booster Technology - Improve Soil Health
+          Sporto
           </title>
 
           {/* Description */}

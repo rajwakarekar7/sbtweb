@@ -23,7 +23,7 @@ export default function TotalCart({ DataCart, total }) {
             <span className="text-teal-500">-{DataCart?.length === 0 ? "0" : process.env.Discount}%</span>
           </div>
           <div className="flex justify-start items-start flex-row gap-36">
-            <p className="text-xs font-semibold text-black">DeliveryCharges-{process.env.SHIPPING}</p>
+            <p className="text-xs font-semibold text-black">DeliveryCharges : ₹50</p>
           </div>
         </div>
         <Divider className="" />
@@ -31,7 +31,7 @@ export default function TotalCart({ DataCart, total }) {
           <p className=" inline-flex  justify-start flex-row gap-40  text-black font-bold text-lg">
             Total Amount
           </p>
-          <span className="text-black font-bold text-lg">₹{DataCart?.length === 0 ? "0" : total + Number(process.env.SHIPPING) || 0}</span>
+          <span className="text-black font-bold text-lg">₹{Number(total) + 50} </span>
         </div>
         <Divider className="my-1" />
         <p className=" inline-flex  justify-start flex-row gap-40  text-teal-500 font-bold text-sm">
