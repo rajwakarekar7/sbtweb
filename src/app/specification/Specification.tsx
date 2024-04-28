@@ -16,7 +16,7 @@ export default function Specification() {
       <div className="flex flex-wrap lg:gap-10 gap-8 justify-center lg:mt-[50px] lg:mb-[100px] mt-[50px] items-center">
         {DataSpec.map((itm) => (
           <a
-           href="https://wa.me/+9156047792"
+           href={itm?.link}
             key={itm.name}
             className="flex flex-row gap-3 justify-center cursor-pointer w-[230px] h-[90px] border  items-center bg-gray-50 rounded-[15px]"
           >

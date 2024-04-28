@@ -35,6 +35,6 @@ export const DataSpec: Dataspeci[] = [
     name: "Support & Help",
     icon: "https://img.icons8.com/wired/64/12B886/technical-support.png",
     des: "24/7 support & info ",
-    link: ""
+    link: "https://wa.me/+9156047792"
   },
 ];
