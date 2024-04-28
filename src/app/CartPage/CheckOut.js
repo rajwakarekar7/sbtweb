@@ -71,7 +71,7 @@ export default function CheckOut({ HandlePlaceOrder, orderfinal, DataCart, total
       // Handle Razorpay payment logic
       try {
         setOrderLoad(true);
-        const response = await axios.post('http://localhost:8000/crorder', {
+        const response = await axios.post('https://server-flame-two.vercel.app/crorder', {
           amount: Number(total)
         });
         const options = {
