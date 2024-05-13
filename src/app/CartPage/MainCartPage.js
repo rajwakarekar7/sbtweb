@@ -10,7 +10,7 @@ import { DataProvideBYHook } from "../DataProviderContext/DataProviderContext";
 import DOMPurify from "dompurify";
 export default function MainCartPage() {
   const { user } = DataProvideBYHook();
-
+  console.log(user);
   React.useEffect(() => {
     const adress = localStorage?.getItem("address");
     const dataAdress = JSON.parse(adress);

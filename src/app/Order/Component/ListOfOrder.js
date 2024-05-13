@@ -53,10 +53,10 @@ export default function ListOfOrder({ OrderData, refetch, loading }) {
                             <p className="font-bold text-[14px] text-black">
                               {itm?.product}
                             </p>
-                            <p className="font-semibold text-gray-600 text-[14px] ">
+                            {/* <p className="font-semibold text-gray-600 text-[14px] ">
                               {Number(itm?.selWght)}
                               {itm?.form === "solid" ? "kg" : "Ltr"}
-                            </p>
+                            </p> */}
                           </div>
                           <div className="flex flex-col bg-gray-20 items-start w-auto justify-start">
                             <p className="font-semibold text-gray-600 text-[14px] ">

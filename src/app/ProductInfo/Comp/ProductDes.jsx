@@ -4,11 +4,13 @@ import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/navigation";
+import { DataProvideBYHook } from "@/app/DataProviderContext/DataProviderContext";
 
 export default function ProductDes({ des }) {
   const oldCartData = useSelector((state) => {
     return state.cart;
   });
+  const {user} = DataProvideBYHook()
 
   const dispatch = useDispatch();
   const Router = useRouter();
@@ -17,6 +19,7 @@ export default function ProductDes({ des }) {
   const [qnt, setQnt] = React.useState(1);
 
   const AddtoCart = (
+    user,
     product,
     id,
     price,
@@ -58,7 +61,7 @@ export default function ProductDes({ des }) {
         },
       });
     } else {
-      localStorage.setItem("cart", JSON.stringify([...oldCartData, CartData]));
+      localStorage.setItem(`${user?.email}`, JSON.stringify([...oldCartData, CartData]));
       dispatch(AddToCart(CartData));
       toast.success("Item Added In Cart !", {
         position: "bottom-right",
@@ -155,6 +158,7 @@ export default function ProductDes({ des }) {
           <div
             onClick={() =>
               AddtoCart(
+                user,
                 des.product_name,
                 des._id,
                 des.price,
