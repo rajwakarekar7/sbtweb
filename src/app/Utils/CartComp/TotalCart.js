@@ -34,9 +34,9 @@ export default function TotalCart({ DataCart, total }) {
           <span className="text-black font-bold text-lg">₹{Number(total) + 50} </span>
         </div>
         <Divider className="my-1" />
-        <p className=" inline-flex  justify-start flex-row gap-40  text-teal-500 font-bold text-sm">
+        {/* <p className=" inline-flex  justify-start flex-row gap-40  text-teal-500 font-bold text-sm">
           You Save 10 % Money On this Order!
-        </p>
+        </p> */}
       </div>
     </>
   );
