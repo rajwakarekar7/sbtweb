@@ -98,15 +98,15 @@ export default function ProductDes({ des }) {
         </p>
         <h1 className="text-2xl  font-bold text-black">{des?.product_name}</h1>
 
-        <p className="text-sm font-semibold text-gray-600">Review(34⭐)</p>
+        <p className="text-sm font-semibold text-gray-600">Review(5⭐)</p>
         <div className="flex gap-2 flex-row justify-center items-center">
           <p className="text-3xl font-bold text-teal-500">₹{des?.price}</p>
-          <div className="flex flex-col">
+          {/* <div className="flex flex-col">
             <p className="text-xs font-bold text-yellow-500">{des?.off}%off </p>
             <p className="line-through text-xs font-bold text-gray-400">
               ₹{Number(des?.price) + 10 * Number(des?.off)}
             </p>
-          </div>
+          </div> */}
         </div>
         <p className="text-black text-sm">{des?.description}</p>
         <div className="flex  gap-2 flex-row justify-center items-center">
