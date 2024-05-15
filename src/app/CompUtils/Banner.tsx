@@ -5,7 +5,7 @@ export default function Banner() {
     <>
       <div className="relative w-full h-[30px]  flex flex-wrap text-white bg-teal-500 justify-center items-center ">
         <div className="lg:text-sm text-xs">
-          Order Now 10% discount On All Products .
+          Shop Now !
         </div>
 
         <div className="order-2 flex w-1/12 items-start justify-end sm:absolute sm:right-0 sm:order-none sm:mr-1 sm:w-auto xl:mr-3">
