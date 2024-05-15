@@ -111,7 +111,7 @@ export default function ProductDes({ des }) {
         <p className="text-black text-sm">{des?.description}</p>
         <div className="flex  gap-2 flex-row justify-center items-center">
           <p className="text-black font-bold lg:text-sm text-xs">
-            {`Price/Weight:`}{" "}
+            {`Select`}{" "}
           </p>
           <div className="flex gap-4 flex-wrap justify-center items-center ">
             {des?.pricelist?.map((key, index) => {
